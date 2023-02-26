@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import idCardData from './data/idCardData.json';
 import greetings from './data/greetings.json';
-import IdCard from './components/IdCard.jsx'
+import creditCardData from './data/creditCardData.json';
+import IdCard from './components/IdCard.jsx';
 import Greetings from './components/Greetings.jsx';
 import Random from './components/Random.jsx';
-import BoxColor from './components/BoxColor.jsx'
+import BoxColor from './components/BoxColor.jsx';
+import CreditCard from './components/CreditCard.jsx';
 
 function App() {
   return (
@@ -31,6 +33,14 @@ function App() {
       <h1 className="titles">Box Color</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <h1 className="titles">Credit Card</h1>
+      <section className="credit-card-container">
+      {creditCardData.map((elem) => {
+        return (
+          <CreditCard key={elem._id} info={elem} />
+        )
+      })}
+      </section>
     </div>
   );
 }

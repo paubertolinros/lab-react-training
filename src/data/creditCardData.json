@@ -1,0 +1,35 @@
+[
+  {
+    "type": "Visa", 
+    "number":"0123456789018845",
+    "expirationMonth":3,
+    "expirationYear":2026,
+    "bank":"BNP",
+    "owner":"Maxence Bouret",
+    "bgColor":"#11aa99",
+    "color":"white",
+    "_id": 1234564
+  },
+  {
+    "type": "Master Card", 
+    "number":"0123456789010995",
+    "expirationMonth":5,
+    "expirationYear":2025,
+    "bank":"N26",
+    "owner":"Pauline Wetley",
+    "bgColor":"#eeeeee",
+    "color":"#222222",
+    "_id": 1234567
+  },
+   {
+    "type": "Visa", 
+    "number":"0123456789016984",
+    "expirationMonth":12,
+    "expirationYear":2027,
+    "bank":"ING Direct",
+    "owner":"Carla Klein",
+    "bgColor":"#ddbb55",
+    "color":"#ffffff",
+    "_id": 1234568
+  }
+]

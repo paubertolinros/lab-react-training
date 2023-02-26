@@ -8,6 +8,10 @@ div.App {
   padding: 15px 10px 15px 10px;
 }
 
+h1 {
+  margin: 25px 0 20px 0
+}
+
 /*------------------ID CARD---------------------*/
 
 section.user-section {
@@ -38,4 +42,35 @@ section.color-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/*------------------CREDIT CARD---------------------*/
+
+section.credit-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+section.credit-card-section {
+  border-radius: 25px;
+  background-color: beige;
+  width: 370px;
+  height: 190px;
+  padding: 25px;
+  margin: 0 10px;
+}
+
+section.credit-card-section div.bank-logo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.credit-card-section div.number-div {
+  margin: 30px 0 20px 0;
+}
+
+
+section.credit-card-section div.expires-bank-div {
+  display: flex;
+  gap: 10px;
 }
