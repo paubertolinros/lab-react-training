@@ -26,8 +26,16 @@ section.user-section div.photo-div img.user-pic {
   width: 150px;
 }
 
-
-
 span {
   font-weight: 700;
+}
+
+/*------------------BOX COLOR---------------------*/
+
+section.color-section {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
