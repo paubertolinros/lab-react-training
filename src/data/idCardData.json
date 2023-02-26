@@ -1,0 +1,6 @@
+[
+  {"firstName": "Aaron", "lastName": "Newell", "gender": "male", "birth":"1999-08-13", "height": 179, "picture": "https://i.imgur.com/CFgX3Xx.png", "_id":123455},
+  {"firstName": "Amelia", "lastName": "Chorng Ua", "gender": "female", "birth":"1970-05-10", "height": 168, "picture": "http://res.cloudinary.com/djyjdargg/image/upload/v1550168765/Ironclass/IH_Jan1952.jpg.jpg", "_id":123456},
+  {"firstName": "André", "lastName": "Sebastian", "gender": "male", "birth":"1985-03-20", "height": 186, "picture": "http://res.cloudinary.com/djyjdargg/image/upload/v1550164358/Ironclass/IH_Jan1928.jpg.jpg", "_id":123457},
+  {"firstName": "Axel", "lastName": "Dahlin", "gender": "male", "birth":"1990-07-01", "height": 183, "picture": "https://i.imgur.com/V8bB1SMb.jpg", "_id":123458}
+]
