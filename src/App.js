@@ -4,6 +4,7 @@ import idCardData from './data/idCardData.json';
 import greetings from './data/greetings.json';
 import IdCard from './components/IdCard.jsx'
 import Greetings from './components/Greetings.jsx';
+import Random from './components/Random.jsx';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           <Greetings lang={elem.lang}>{elem.name}</Greetings>
         )
       })}
+      <h1 className="titles">Random</h1>
+      <Random min={1} max={6}>Random value between 1 and 6 → </Random>
+      <Random min={1} max={100}>Random value between 1 and 100 → </Random>
     </div>
   );
 }

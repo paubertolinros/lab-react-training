@@ -2,7 +2,6 @@ import React from 'react';
 
 const Greetings = (greeting) => {
   const { lang, children } = greeting;
-  console.log(lang, children)
   let langGreeting = "";
   switch (lang) {
     case "en":
