@@ -4,6 +4,7 @@ import idCardData from './data/idCardData.json';
 import greetings from './data/greetings.json';
 import creditCardData from './data/creditCardData.json';
 import IdCard from './components/IdCard.jsx';
+import IdCard2 from './components/IdCard2.jsx';
 import Greetings from './components/Greetings.jsx';
 import Random from './components/Random.jsx';
 import BoxColor from './components/BoxColor.jsx';
@@ -18,6 +19,23 @@ function App() {
           <IdCard key={user._id} user={user} />
         )
       })}
+       <h3 className="titles">Id Card 2</h3>
+      <IdCard2
+      lastName='Doe'
+      firstName='John'
+      gender='male'
+      height={178}
+      birth={new Date("1992-07-14")}
+      picture="https://randomuser.me/api/portraits/men/44.jpg"
+      />
+      <IdCard2
+      lastName='Delores'
+      firstName='Obrien'
+      gender='female'
+      height={172}
+      birth={new Date("1988-05-11")}
+      picture="https://randomuser.me/api/portraits/women/44.jpg"
+      />
       <h1 className="titles">Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>

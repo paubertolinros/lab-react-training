@@ -1,12 +1,11 @@
 import React from 'react';
 
-const IdCard = (user) => {
-  const { user: { lastName, firstName, gender, height, birth, picture } } = user;
-  const changeFormatBirth = new Date(birth).toLocaleString('en-US', {
-        weekday: 'short',
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
+const IdCard2 = ({ lastName, firstName, gender, height, birth, picture }) => {
+  let changeDate = birth.toLocaleDateString('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
   }).replace(',', '');
   
   return (
@@ -19,11 +18,11 @@ const IdCard = (user) => {
         <p><span>First name: </span> {firstName}</p>
         <p><span>Gender: </span> {gender}</p>
         <p><span>Height: </span> {height}</p>
-        <p><span>Birth: </span> {changeFormatBirth}</p>
+        <p><span>Birth: </span> {changeDate}</p>
       </div>
     </section>
   )
 
 }
 
-export default IdCard;
+export default IdCard2;
