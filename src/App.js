@@ -9,6 +9,8 @@ import Greetings from './components/Greetings.jsx';
 import Random from './components/Random.jsx';
 import BoxColor from './components/BoxColor.jsx';
 import CreditCard from './components/CreditCard.jsx';
+import Rating from './components/Rating.jsx';
+import DriverCard from './components/DriverCard.jsx';
 
 function App() {
   return (
@@ -59,6 +61,32 @@ function App() {
         )
       })}
       </section>
+      <h1>Rating</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+      <h1>Driver Card</h1>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }}
+      />
     </div>
   );
 }

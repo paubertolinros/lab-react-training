@@ -9,7 +9,7 @@ div.App {
 }
 
 h1 {
-  margin: 25px 0 20px 0
+  margin: 25px 0 20px 0;
 }
 
 /*------------------ID CARD---------------------*/
@@ -69,8 +69,38 @@ section.credit-card-section div.number-div {
   margin: 30px 0 20px 0;
 }
 
-
 section.credit-card-section div.expires-bank-div {
   display: flex;
   gap: 10px;
 }
+
+/*------------------DRIVER CARD---------------------*/
+
+section.driver-card-section {
+  background-color: rgb(38, 90, 234);
+  border-radius: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+
+section.driver-card-section div.image-driver img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+section.driver-card-section div.name-rating-driver h2{
+  margin-bottom: 5px;
+}
+
+section.driver-card-section div.name-rating-driver h2.h2-driver {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
