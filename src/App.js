@@ -46,8 +46,8 @@ function App() {
         )
       })}
       <h1 className="titles">Random</h1>
-      <Random min={1} max={6}>Random value between 1 and 6 → </Random>
-      <Random min={1} max={100}>Random value between 1 and 100 → </Random>
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
       <h1 className="titles">Box Color</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
