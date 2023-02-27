@@ -66,12 +66,31 @@ section.credit-card-section div.bank-logo-container {
 }
 
 section.credit-card-section div.number-div {
-  margin: 30px 0 20px 0;
+  margin: 10px 0 20px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+section.credit-card-section div.number-div p.card-number{
+  font-size: 30px;
 }
 
 section.credit-card-section div.expires-bank-div {
   display: flex;
   gap: 10px;
+}
+
+img.logo-credit-card-visa {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+img.logo-credit-card-mastercard {
+  width: 50px;
+}
+
+img.logo-credit-card-default {
+  width: 30px;
 }
 
 /*------------------DRIVER CARD---------------------*/

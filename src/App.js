@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+//import { masterImage } from './assets/images/master-card.svg'
 import idCardData from './data/idCardData.json';
 import greetings from './data/greetings.json';
 import creditCardData from './data/creditCardData.json';
