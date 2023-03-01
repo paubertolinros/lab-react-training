@@ -1,17 +1,8 @@
 import React from 'react';
-
-export const ratingStarsFunction = (ratingOrStars) => {
-  let floorNumber = Math.round(ratingOrStars);
-  let starsToPaint = [];
-  for (let i = 0; i < 5; i++) {
-    i < floorNumber ? starsToPaint.push("★") : starsToPaint.push("☆");
-  };
-  return starsToPaint;
-};
+import Rating from './Rating'
 
 const DriverCard = (prop) => {
   const { name, rating, img, car:{model, licensePlate} } = prop;
-  const ratingToPaint = ratingStarsFunction(rating);
   return (
     <section className="driver-card-section">
       <div className="image-driver">
@@ -19,7 +10,7 @@ const DriverCard = (prop) => {
       </div>
       <div className="name-rating-driver">
         <h2>{name}</h2>
-        <h2 className="h2-driver">{ratingToPaint}</h2>
+        <Rating>{rating}</Rating>
         <p>{model} - {licensePlate}</p>
       </div>
   
