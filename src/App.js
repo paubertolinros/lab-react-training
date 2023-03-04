@@ -12,6 +12,7 @@ import BoxColor from './components/BoxColor.jsx';
 import CreditCard from './components/CreditCard.jsx';
 import Rating from './components/Rating.jsx';
 import DriverCard from './components/DriverCard.jsx';
+import LikeButton from './components/LikeButton.jsx';
 
 function App() {
   return (
@@ -88,6 +89,11 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <h1>Like Button</h1>
+      <div className="buttons-section">
+        <LikeButton />
+        <LikeButton />
+      </div>
     </div>
   );
 }

@@ -123,3 +123,42 @@ section.driver-card-section div.name-rating-driver h2.h2-driver {
   font-size: 30px;
 }
 
+/*------------------LIKE BUTTON---------------------*/
+
+div.buttons-section {
+  display: flex;
+  gap: 10px;
+}
+
+section.section-like-button button{
+  border: none;
+  padding: 5px 10px;
+}
+
+.green {
+  background-color: green;
+  color: #ffffff;
+}
+
+.red {
+  background-color: red;
+  color: #ffffff;
+}
+
+.blue {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.purple {
+  background-color:purple;
+  color:#ffffff;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
