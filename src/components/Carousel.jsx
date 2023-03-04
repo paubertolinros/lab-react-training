@@ -23,7 +23,7 @@ const Carousel = ({ images }) => {
   return (
     <section className="section-carousel">
       <button onClick={handleLeButton}>◀︎</button>
-      <img className="carousel-image" src={image}  alt="people" />
+      <img className="carousel-image" src={image} alt="people" />
       <button onClick={handleRiButton}>▶︎</button>
     </section>
   )
