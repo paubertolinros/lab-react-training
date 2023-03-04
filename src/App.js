@@ -14,6 +14,7 @@ import Rating from './components/Rating.jsx';
 import DriverCard from './components/DriverCard.jsx';
 import LikeButton from './components/LikeButton.jsx';
 import ClickablePicture from './components/ClickablePicture.jsx';
+import Dice from './components/Dice.jsx';
 
 function App() {
   return (
@@ -97,6 +98,8 @@ function App() {
       </div>
       <h1>Clickable Picture</h1>
       <ClickablePicture img='maxence.png' imgClicked='maxence-glasses.png' />
+      <h1>Dice</h1>
+      <Dice />
     </div>
   );
 }

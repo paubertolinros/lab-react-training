@@ -162,3 +162,9 @@ section.section-like-button button{
 .orange {
   background-color: orange;
 }
+
+/*------------------DICE---------------------*/
+
+section.section-dice img.dice-image {
+  width: 200px;
+}
