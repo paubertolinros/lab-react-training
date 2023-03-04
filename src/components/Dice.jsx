@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import diceEmpty from '../assets/images/dice-empty.png';
 import diceOne from '../assets/images/dice1.png';
 import diceTwo from '../assets/images/dice2.png';
@@ -21,7 +21,7 @@ const Dice = () => {
 
   return (
     <section className="section-dice">
-      <img className="dice-image" src={diceImage} onClick={handleClickDice} alt="boy" />
+      <img className="dice-image" src={diceImage} onClick={handleClickDice} alt="dice" />
     </section>
   )
 }

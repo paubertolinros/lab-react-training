@@ -168,3 +168,21 @@ section.section-like-button button{
 section.section-dice img.dice-image {
   width: 200px;
 }
+
+/*------------------CAROUSEL---------------------*/
+
+section.section-carousel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+section.section-carousel img.carousel-image {
+  width: 250px;
+}
+
+section.section-carousel button {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}

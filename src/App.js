@@ -15,6 +15,7 @@ import DriverCard from './components/DriverCard.jsx';
 import LikeButton from './components/LikeButton.jsx';
 import ClickablePicture from './components/ClickablePicture.jsx';
 import Dice from './components/Dice.jsx';
+import Carousel from './components/Carousel.jsx';
 
 function App() {
   return (
@@ -100,6 +101,14 @@ function App() {
       <ClickablePicture img='maxence.png' imgClicked='maxence-glasses.png' />
       <h1>Dice</h1>
       <Dice />
+      <h1>Carousel</h1>
+      <Carousel images={[
+      'https://randomuser.me/api/portraits/women/1.jpg',
+      'https://randomuser.me/api/portraits/men/1.jpg',
+      'https://randomuser.me/api/portraits/women/2.jpg',
+      'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}  
+    />
     </div>
   );
 }
