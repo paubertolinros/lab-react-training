@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import profiles from './data/berlin.json'; 
 //import { masterImage } from './assets/images/master-card.svg'
 import idCardData from './data/idCardData.json';
 import greetings from './data/greetings.json';
@@ -17,6 +18,7 @@ import ClickablePicture from './components/ClickablePicture.jsx';
 import Dice from './components/Dice.jsx';
 import Carousel from './components/Carousel.jsx';
 import NumbersTable from './components/NumbersTable.jsx';
+import Facebook from './components/Facebook.jsx';
 
 function App() {
   return (
@@ -112,6 +114,8 @@ function App() {
       />
       <h1>NumbersTable</h1>
       <NumbersTable limit={12} />
+      <h1>Facebook</h1>
+      <Facebook profileInfo={profiles} /> 
     </div>
   );
 }
