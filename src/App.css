@@ -210,3 +210,31 @@ section.section-table tbody tr td{
 .white {
   background-color: #ffffff;
 }
+
+/*------------------FACEBOOK---------------------*/
+
+section.fb-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px
+}
+
+.blue-button {
+  background-color: rgb(131, 213, 213);
+  border: 1px solid #949494;
+  padding: 5px 10px;
+}
+
+.white-button {
+  background-color: white;
+  border: 1px solid #949494;
+  padding: 5px 10px;
+}
+
+.blue-background {
+  background-color: rgb(131, 213, 213);
+}
+
+.white-background {
+  background-color: white;
+}
