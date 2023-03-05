@@ -4,7 +4,8 @@ const Facebook = ({ profileInfo }) => {
   const [usersInfo, setUsersInfo] = useState(profileInfo);
   const [buttonSelected, setButtonSelected] = useState("");
   const [showHide, setShowHide] = useState(false);
-  const [firstName, setFirstName] = useState("")
+  const [firstName, setFirstName] = useState("");
+  const [searchInput, setSearchInput] = useState("");
 
   const noRepeatCountries = [];
   profileInfo.filter(elem => !noRepeatCountries.includes(elem.country) ? noRepeatCountries.push(elem.country) : elem);
@@ -17,6 +18,14 @@ const Facebook = ({ profileInfo }) => {
     setShowHide(prev => !prev)
     setFirstName(name)
   };
+
+  const handleSortUsers = () => {
+    setUsersInfo([...usersInfo].sort((a, b) => a.lastName.localeCompare(b.lastName)))
+  };
+
+  const handleSearch = (e) => {
+    setSearchInput(e.target.value)
+  };
   
   return (
     <>
@@ -25,9 +34,12 @@ const Facebook = ({ profileInfo }) => {
         return (
           <button key={`button-${i}`} onClick={()=> {handleButtonSelected(elem)}} className={elem===buttonSelected ? "blue-button" : "white-button"}>{elem}</button>
         )
-      })};
-        </section>
-      {usersInfo.map((elem, i) => {
+      })}
+        <button onClick={handleSortUsers} className="white-button">Sort by Name</button>
+        <input type="text" onChange={handleSearch} />
+      </section>
+      {usersInfo.filter(elem => elem.firstName.toLowerCase().includes(searchInput.toLowerCase()))
+        .map((elem, i) => {
         return (
           <section onChange={() => handleButtonSelected(elem.country)} className={elem.country === buttonSelected ? "blue-background user-section" : "white-background user-section" } key={i}> 
             <div className="photo-div" onClick={() => handleHideShowInfo(elem.firstName)}>
