@@ -186,3 +186,27 @@ section.section-carousel button {
   border: none;
   font-size: 20px;
 }
+
+/*------------------TABLE---------------------*/
+
+section.section-table tbody tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.section-table tbody tr td{
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  background-color: rgb(245, 68, 68);
+}
+
+.white {
+  background-color: #ffffff;
+}

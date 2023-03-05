@@ -16,6 +16,7 @@ import LikeButton from './components/LikeButton.jsx';
 import ClickablePicture from './components/ClickablePicture.jsx';
 import Dice from './components/Dice.jsx';
 import Carousel from './components/Carousel.jsx';
+import NumbersTable from './components/NumbersTable.jsx';
 
 function App() {
   return (
@@ -108,7 +109,9 @@ function App() {
       'https://randomuser.me/api/portraits/women/2.jpg',
       'https://randomuser.me/api/portraits/men/2.jpg'
       ]}  
-    />
+      />
+      <h1>NumbersTable</h1>
+      <NumbersTable limit={12} />
     </div>
   );
 }
