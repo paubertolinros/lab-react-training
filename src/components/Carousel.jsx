@@ -9,7 +9,7 @@ const Carousel = ({ images }) => {
     setImage(images[indexImg])
   }, [images, indexImg])
   //QUESTION: Aquest useEffect em donava error, he anat provant
-  // i al dinal ha desaparegut, però no entenc què
+  // i al final ha desaparegut, però no entenc què
   //estava fent malament i perquè necessito "images", és perquè
   //cada vegada que s'actualitzi indexImg també ho ha de fer 
   //images?

@@ -238,3 +238,29 @@ section.fb-buttons {
 .white-background {
   background-color: white;
 }
+
+/*------------------SIGNUP---------------------*/
+
+.red-input {
+  background-color: red;
+}
+
+.green-input {
+  background-color: green;
+}
+
+form.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.valid {
+  color: green
+}
+
+.invalid {
+  color: red;
+}
