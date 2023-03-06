@@ -11,7 +11,6 @@ const SignupPage = () => {
     
   const handleChange = (e) => {
     setNewInfo(prev => {
-      console.log("prev", prev)
       return {
         ...prev,
         [e.target.name]: e.target.value
@@ -24,7 +23,6 @@ const SignupPage = () => {
     setInfo(newInfo);
     setNewInfo(initialState)
   };
-  console.log("Info", info)
   
   const inputColor = (password) => {
     return password === "" || password.length <= 5   

@@ -264,3 +264,18 @@ form.form {
 .invalid {
   color: red;
 }
+
+/*------------------COLOR---------------------*/
+
+div.div-color {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.rgb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px
+}

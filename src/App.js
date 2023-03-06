@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import profiles from './data/berlin.json'; 
-//import { masterImage } from './assets/images/master-card.svg'
 import idCardData from './data/idCardData.json';
 import greetings from './data/greetings.json';
 import creditCardData from './data/creditCardData.json';
@@ -20,6 +19,7 @@ import Carousel from './components/Carousel.jsx';
 import NumbersTable from './components/NumbersTable.jsx';
 import Facebook from './components/Facebook.jsx';
 import SignupPage from './components/SignupPage.jsx';
+import RGBColorPicker from './components/RGBColorPicker.jsx';
 
 function App() {
   return (
@@ -119,6 +119,8 @@ function App() {
       <Facebook profileInfo={profiles} /> 
       <h1>Signup Page</h1>
       <SignupPage />
+      <h1>RGBColorPicker</h1>
+      <RGBColorPicker />
     </div>
   );
 }
