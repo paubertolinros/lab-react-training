@@ -216,7 +216,8 @@ section.section-table tbody tr td{
 section.fb-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px
+  gap: 10px;
+  justify-content: center;
 }
 
 .blue-button {
@@ -237,6 +238,23 @@ section.fb-buttons {
 
 .white-background {
   background-color: white;
+}
+
+div.filter-search-fb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.sort-button {
+  padding: 5px 19px;
+}
+
+.search-input {
+  padding: 5px 0px;
 }
 
 /*------------------SIGNUP---------------------*/
@@ -278,4 +296,38 @@ div.div-color {
   align-items: center;
   gap: 10px;
   margin: 20px
+}
+
+.faceBook {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 100px;
+}
+.faceBookCard {
+  display: flex;
+  gap: 20px;
+  height: 200px;
+  align-items: flex-start;
+}
+.faceBookCard img {
+  height: 100%;
+}
+.faceBookInfo span {
+  font-weight: bold;
+}
+.countryBar {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+button {
+  border: 1px solid #282c34;
+  border-radius: 5px;
+  padding: 5px;
+}
+.selectedCountry {
+  background-color: #282c34;
+  color: aliceblue;
 }
